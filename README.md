@@ -9,15 +9,22 @@ An ultra-simple graphic-user-interface (GUI) that hashes files for you, using SH
 ## How to use:
 1. Download the file "sha2.py"
 2. Set your working directory to where "sha2.py" is in Python 3
-3. Import the package by using ```import sha2```
-4. Initiate the GUI by using ```sha2.gui()```
+3. Initiate GUI by command ```runfile("sha2.py")```
 4. Select files in GUI to hash away!
 
 ## Demostrations:
 * The GUI
 
+![GUI interface](./demo-pictures/Capture1.PNG)
+
 * Hashing three selected files, displaying the SHA2-256 hashes of said files
+
+![GUI interface](./demo-pictures/Capture3.PNG)
 
 * Generating "sha256sum.txt" file
 
+![GUI interface](./demo-pictures/Capture4.PNG)
+
 * "sha256sum.txt" file can be verified using a PGP client!
+
+![GUI interface](./demo-pictures/Capture5.PNG)
