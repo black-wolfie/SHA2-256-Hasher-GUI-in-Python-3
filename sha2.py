@@ -112,17 +112,18 @@ def sha2_gui_func(files):
     sha2_file.close
 
 # setup the main window_1
-window_1 = Tk()
-window_1.geometry('700x600+650+200')
-window_1.title("SHA2-256 hasher")
-
-lb0 = Label(window_1, text = "+", font=("Ariel", 5))
-lb0.grid(sticky="W", row=0, column=0)
-
-lbl = Label(window_1, text = "Selet the files you want to hash", 
-                font=("Ariel", 10))
-lbl.grid(sticky="W", row=1, column=1)
-
-btn = Button(window_1, text="Select Files", command =  OpenFile)
-btn.grid(row = 3, column = 1)
-window_1.mainloop()
+def gui():
+    window_1 = Tk()
+    window_1.geometry('700x600+650+200')
+    window_1.title("SHA2-256 hasher")
+    
+    lb0 = Label(window_1, text = "+", font=("Ariel", 5))
+    lb0.grid(sticky="W", row=0, column=0)
+    
+    lbl = Label(window_1, text = "Selet the files you want to hash", 
+                    font=("Ariel", 10))
+    lbl.grid(sticky="W", row=1, column=1)
+    
+    btn = Button(window_1, text="Select Files", command =  OpenFile)
+    btn.grid(row = 3, column = 1)
+    window_1.mainloop()
