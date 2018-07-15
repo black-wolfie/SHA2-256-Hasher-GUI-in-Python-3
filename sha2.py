@@ -53,7 +53,7 @@ from tkinter import Tk, Label, Button
 import hashlib
 from tkinter.filedialog import askopenfilenames
 import os
-import pandas as pd
+# import pandas as pd
 
 # file dialog function
 def OpenFile():
@@ -74,7 +74,7 @@ def sha2_gui_func(files):
     lb2.grid(row=4, column=1) 
     lb2 = Label(window_1, text = "sha2-256 hash", font=("Consolas", 10))
     lb2.grid(row=4, column=2) 
-    sha256_tb = pd.DataFrame([])
+#    sha256_tb = pd.DataFrame([])
     
     sha2_file = open((os.path.dirname(files[0]) + "/" + "sha256sum.txt"),'w')
     for x in range(0,n):
@@ -85,10 +85,10 @@ def sha2_gui_func(files):
                 h_sha256.update(buf)
                 buf = afile.read(BLOCKSIZE)
    
-        sha256_dict = {"File_Name":[os.path.basename(files[x])],
-                       "SHA2_256_hash":[h_sha256.hexdigest()]}
+#        sha256_dict = {"File_Name":[os.path.basename(files[x])],
+#                       "SHA2_256_hash":[h_sha256.hexdigest()]}
         
-        sha256_tb = sha256_tb.append(pd.DataFrame(sha256_dict))
+#        sha256_tb = sha256_tb.append(pd.DataFrame(sha256_dict))
     
         # isolate file name from path: os.path.basename(your_path)
         # abbreviate file names that are too long
