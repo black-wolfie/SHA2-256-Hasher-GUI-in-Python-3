@@ -7,6 +7,7 @@ An ultra-simple graphic-user-interface (GUI) that hashes files for you, using SH
 2. Generate a sha256sum.txt, which can be verified using PGP!
 
 ## How to use:
+0. Make sure you have ```tkinter```, ```hashlib```, ```os```, and ```glob``` packages
 1. Download the file "sha2.py"
 2. Set your working directory to where "sha2.py" is in Python 3
 3. Initiate GUI by command ```runfile("sha2.py")```
