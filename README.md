@@ -22,7 +22,7 @@ An ultra-simple graphic-user-interface (GUI) that hashes files for you, using SH
 
 ![GUI interface](./demo-pictures/Capture3.PNG)
 
-* Generating "sha256sum.txt" file
+* "sha256sum.txt" file is automatically generated
 
 ![GUI interface](./demo-pictures/Capture4.PNG)
 
